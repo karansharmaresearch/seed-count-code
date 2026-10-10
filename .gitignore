@@ -1,0 +1,22 @@
+# compiled programs and run outputs
+*.exe
+*.o
+*.pdb
+seed_sum
+seed_sum_par
+n_fast
+n_ratio_stats
+largest_seed_check
+c5_direct
+c5_seg
+seg1e8/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor / OS
+.vscode/
+.DS_Store
