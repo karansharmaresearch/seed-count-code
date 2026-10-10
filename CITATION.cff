@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Code and data for: Inserting Zeros Detects Primes / Numbers that divide their zero-insertions: classification, maximal order and average order"
+version: "1"
+date-released: "2026-10-09"
+license: MIT
+repository-code: "https://github.com/karansharmaresearch/seed-count-code"
+doi: "10.5281/zenodo.23281208"
+authors:
+  - family-names: Sharma
+    given-names: Karan
+    affiliation: "Independent Researcher, India"
+    orcid: "https://orcid.org/0009-0003-7224-5832"
+  - family-names: Sonkhla
+    given-names: Dheeraj
+    affiliation: "Department of Computer Science, Himachal Pradesh University, Shimla, India"
+    orcid: "https://orcid.org/0000-0002-5595-6507"
+keywords:
+  - "OEIS A394974"
+  - "OEIS A398346"
+  - "number theory"
+  - "verification"

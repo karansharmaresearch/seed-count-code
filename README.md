@@ -1,14 +1,17 @@
 # Code and data: zero-insertion divisors and OEIS A394974
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23281208.svg)](https://doi.org/10.5281/zenodo.23281208)
+
 Programs, verification scripts and data for two papers by Karan Sharma and
 Dheeraj Sonkhla:
 
 - **"Inserting Zeros Detects Primes"**, preprint (2026), Zenodo,
-  https://doi.org/ZENODO_DOI_A
+  https://doi.org/10.5281/zenodo.23281253
 - **"Numbers that divide their zero-insertions: classification, maximal order
-  and average order"**, preprint (2026), Zenodo, https://doi.org/ZENODO_DOI_B
+  and average order"**, preprint (2026), Zenodo, https://doi.org/10.5281/zenodo.23281265
 
-Archived version of this repository: https://doi.org/CODE_DOI
+Repository: https://github.com/karansharmaresearch/seed-count-code  
+Archived version: https://doi.org/10.5281/zenodo.23281208
 
 ## The objects
 
@@ -99,5 +102,5 @@ python -m ziglang cc -O2 -o n_fast n_fast.c
 ## License and citation
 
 MIT License (see `LICENSE`). If you use this code or data, please cite the
-papers above and the archived version, https://doi.org/CODE_DOI (see
+papers above and the archived version, https://doi.org/10.5281/zenodo.23281208 (see
 `CITATION.cff`).
