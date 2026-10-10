@@ -1,0 +1,5 @@
+(i) definition vs closed form, B<=60, mismatches: []
+(ii) violations of Thm 4.1 steps, 3<=B<=3000: [] 0
+     max summand/(2 sqrt(DE)) = 0.4953
+     max S(B)/(2 tau(B) tau(B-1) sqrt B) = 0.051
+S(16) = 6  S(36) = 16

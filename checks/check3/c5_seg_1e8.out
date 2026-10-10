@@ -1,0 +1,7 @@
+T(1e8) = 21187268282
+checkpoints compared: 24  mismatches: []
+R 36 16
+END total=4483215504 viol=0 best_nonc36=0.375000@16 maxc=0.10206@6
+END total=5282986500 viol=0 best_nonc36=0.000713@28881216 maxc=0.02554@27415574
+END total=5692509385 viol=0 best_nonc36=0.000698@59181760 maxc=0.02551@61539239
+END total=5728556893 viol=0 best_nonc36=0.000424@83338200 maxc=0.02554@85703942

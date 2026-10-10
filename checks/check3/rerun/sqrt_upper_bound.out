@@ -1,0 +1,2 @@
+closed form = brute force, B < 200
+DE < B-1, per-k < 2 sqrt(B), and S(B) < 2 tau(B) tau(B-1) sqrt(B) (Theorem 4.1) hold for 3 <= B <= 3000 (largest S/bound = 0.051 at B=6)

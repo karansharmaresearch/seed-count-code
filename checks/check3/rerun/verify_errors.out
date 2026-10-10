@@ -1,0 +1,13 @@
+Lemma 5.4 (a)-(d) hold for every x <= 90, all coprime (u',v') with n <= x+2, all t <= 3x+5 (A by brute force); max |A-a|/(3.5R+2.5) = 0.382
+  x=    7: E1 =      -20.7, Prop 5.10 bound (7sqrt2+5) x frakD(x) =      497.4
+  x=   20: E1 =      -89.6, Prop 5.10 bound (7sqrt2+5) x frakD(x) =     2550.5
+  x=   61: E1 =     -399.1, Prop 5.10 bound (7sqrt2+5) x frakD(x) =    12466.4
+  x=  150: E1 =    -1267.9, Prop 5.10 bound (7sqrt2+5) x frakD(x) =    42127.6
+  x=  400: E1 =    -4255.5, Prop 5.10 bound (7sqrt2+5) x frakD(x) =   151187.0
+  x= 1000: E1 =   -13195.2, Prop 5.10 bound (7sqrt2+5) x frakD(x) =   481528.5
+Lemma 5.4 (a)-(d) hold for all (u',v',t) with n, t <= 2x+2 at x in {7,20,61,150,400,1000} ((a) by brute force for x <= 150); max |A-a|/(3.5R+2.5) = 0.462
+Lemma 5.11: max_y y*|H(y) - log y - gamma| = 0.5369 <= 2 on a grid of step 7/997 in [1, 201]
+  x=   100: Lemma 5.12 holds for all n <= x; E2 = 471.5, Prop 5.13 bound = 9673.3 (C1, C2 truncated at d <= 20000: underestimates)
+  x=  1000: Lemma 5.12 holds for all n <= x; E2 = 8757.9, Prop 5.13 bound = 182219.7 (C1, C2 truncated at d <= 20000: underestimates)
+  x= 10000: Lemma 5.12 holds for all n <= x; E2 = 139272.9, Prop 5.13 bound = 2945918.3 (C1, C2 truncated at d <= 20000: underestimates)
+  x= 50000: Lemma 5.12 holds for all n <= x; E2 = 910979.7, Prop 5.13 bound = 19448412.3 (C1, C2 truncated at d <= 20000: underestimates)

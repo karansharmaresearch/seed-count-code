@@ -1,0 +1,12 @@
+c1_closed_form_and_thm41 exit 0
+c2_bijection_floor exit 0
+c3_lemma54 exit 0
+c4_decomposition exit 0
+c6_constants_mainterm exit 0
+c7_prop33 exit 0
+c5 exit 0
+verify_rewrite exit 0 (2s)
+verify_mainterm exit 0 (14s)
+verify_errors exit 0 (49s)
+sqrt_upper_bound exit 0 (1s)
+verify exit 0 (3s)

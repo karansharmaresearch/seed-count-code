@@ -1,0 +1,2 @@
+Lemmas 5.1-5.2 and the bijection hold for all 3 <= B <= 400 (79401 pairs)
+Proposition 5.3 (t-count direct for x <= 1000, and by Mobius) equals the direct evaluation of (1.1) for x in (3, 4, 5, 10, 30, 97, 100, 257, 1000, 2000, 3000)

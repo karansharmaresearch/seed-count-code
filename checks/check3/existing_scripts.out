@@ -1,0 +1,28 @@
+== verify_rewrite
+Lemmas 2.1-2.3 and the bijection hold for all 3 <= B <= 400 (79401 pairs)
+Theorem 2.4 and Corollary 2.5 equal direct T(x) for x in {3,4,5,10,30,97,100,257,1000} and the known T(2000), T(3000)
+== verify_mainterm
+  File "/usr/local/lib/python3.11/dist-packages/numpy/lib/_datasource.py", line 192, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/numpy/lib/_datasource.py", line 529, in open
+    raise FileNotFoundError(f"{path} not found.")
+FileNotFoundError: partial_sums_1e8.txt not found.
+== verify_errors
+Lemmas 4.1-4.4 hold for all (u',v',t) at x in {7,20,61,150,400,1000} (4.1 checked directly for x <= 150); max |A-a|/(4.5R+3.5) = 0.358, max |A-a|/(3.5R+2.5) = 0.462
+Lemma 4.6: max_y y*|H(y) - log y - gamma| = 0.5369 <= 2 on y in [1, 200]
+x=   100: E2/(xL^2) = +0.2223, Lemma-4.7 bound summed /(xL^2) = 0.6427; E1 bound (9sqrt2+7) x sum 2^w/n /(xL^2) = 12.362
+x=  1000: E2/(xL^2) = +0.1835, Lemma-4.7 bound summed /(xL^2) = 0.5554; E1 bound (9sqrt2+7) x sum 2^w/n /(xL^2) = 10.150
+x= 10000: E2/(xL^2) = +0.1642, Lemma-4.7 bound summed /(xL^2) = 0.5086; E1 bound (9sqrt2+7) x sum 2^w/n /(xL^2) = 9.080
+x= 50000: E2/(xL^2) = +0.1556, Lemma-4.7 bound summed /(xL^2) = 0.4866; E1 bound (9sqrt2+7) x sum 2^w/n /(xL^2) = 8.609
+== sqrt_upper_bound
+closed form = brute force, B < 200
+DE < B-1, per-k < 2 sqrt(B), and S(B) < 2 tau(B) tau(B-1) sqrt(B) hold for 3 <= B <= 3000 (largest S/bound = 0.051 at B=6)
+  1000000        0.91001             0.23867    -0.05744   0.14516  -0.20260
+  1024000        0.90993             0.23864    -0.05739       nan       nan
+  2000000        0.90790             0.23761    -0.05580       nan       nan
+  2048000        0.90783             0.23757    -0.05574       nan       nan
+  4096000        0.90593             0.23661    -0.05425       nan       nan
+  5000000        0.90541             0.23634    -0.05384       nan       nan
+  8192000        0.90418             0.23572    -0.05289       nan       nan
+ 10000000        0.90371             0.23548    -0.05252       nan       nan

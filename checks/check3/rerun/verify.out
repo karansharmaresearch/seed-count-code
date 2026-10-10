@@ -1,0 +1,3 @@
+OK  closed form == brute force for n = 2..400
+OK  S(n) = 0 iff n prime for n = 2..3000
+All checks passed.

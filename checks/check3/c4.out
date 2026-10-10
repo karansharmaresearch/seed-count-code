@@ -1,0 +1,14 @@
+C1 ~ 5.0267  C2 ~ 2.4996 (truncated at 20000)
+x=3: T closed=0 grouped=0 M+E1+E2=-0.000000 | E1=-5.2 (bound 119) E2=3.3 (bound 56) | S1=4<= 20, S2=5<= 16, S3=0<= 20 | support T_n ok=True
+x=4: T closed=1 grouped=1 M+E1+E2=1.000000 | E1=-7.5 (bound 204) E2=4.8 (bound 93) | S1=6<= 34, S2=9<= 24, S3=0<= 34 | support T_n ok=True
+x=5: T closed=1 grouped=1 M+E1+E2=1.000000 | E1=-11.1 (bound 284) E2=6.2 (bound 129) | S1=9<= 48, S2=11<= 33, S3=0<= 48 | support T_n ok=True
+x=6: T closed=3 grouped=3 M+E1+E2=3.000000 | E1=-16.0 (bound 401) E2=10.6 (bound 177) | S1=15<= 68, S2=15<= 42, S3=1<= 68 | support T_n ok=True
+x=7: T closed=3 grouped=3 M+E1+E2=3.000000 | E1=-20.7 (bound 497) E2=12.4 (bound 219) | S1=18<= 84, S2=17<= 52, S3=2<= 84 | support T_n ok=True
+x=10: T closed=10 grouped=10 M+E1+E2=10.000000 | E1=-31.9 (bound 894) E2=20.2 (bound 384) | S1=33<= 151, S2=29<= 83, S3=2<= 151 | support T_n ok=True
+x=30: T closed=78 grouped=78 M+E1+E2=78.000000 | E1=-156.0 (bound 4615) E2=98.7 (bound 1887) | S1=186<= 778, S2=121<= 330, S3=16<= 778 | support T_n ok=True
+x=97: T closed=532 grouped=532 M+E1+E2=532.000000 | E1=-722.6 (bound 23478) E2=455.4 (bound 9272) | S1=971<= 3960, S2=499<= 1352, S3=94<= 3960 | support T_n ok=True
+x=100: T closed=576 grouped=576 M+E1+E2=576.000000 | E1=-731.1 (bound 24520) E2=471.5 (bound 9673) | S1=1012<= 4136, S2=531<= 1401, S3=85<= 4136 | support T_n ok=True
+x=257: T closed=2319 grouped=2319 M+E1+E2=2319.000000 | E1=-2485.9 (bound 85347) E2=1600.8 (bound 33001) | S1=3616<= 14397, S2=1607<= 4207, S3=317<= 14397 | support T_n ok=True
+x=500: T closed=6068 grouped=6068 M+E1+E2=6068.000000 | E1=-5654.6 (bound 200952) E2=3714.1 (bound 76812) | S1=8621<= 33898, S2=3495<= 9017, S3=748<= 33898 | support T_n ok=True
+x=1000: T closed=15901 grouped=15901 M+E1+E2=15901.000000 | E1=-13195.2 (bound 481529) E2=8757.9 (bound 182220) | S1=20864<= 81227, S2=7749<= 19766, S3=1766<= 81227 | support T_n ok=True
+Lemma 5.11: max |H(y)-log y-gamma| / (2/y) on grid y<3000: 0.270363
