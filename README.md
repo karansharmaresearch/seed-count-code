@@ -37,4 +37,54 @@ checks/check3/         independent referee-style check of the average-order proo
 | `poly_base_seeds.py` | the same question with a polynomial base over F_q |
 | `fast_seedcount.py` | fast S(B) and T(x) using divisor pairs of B and B−1 |
 | `seed_sum.c` | exact T(x), single process |
-| `seed_sum_par.c` + `run_par.py` | exact T(x) in parallel chunks (used
+| `seed_sum_par.c` + `run_par.py` | exact T(x) in parallel chunks (used for x up to 10^8) |
+| `records_S.py` | record values of S(B) up to X |
+| `fit_constant.py`, `analyze_avg.py` | fit T(x) against C x (log x)^3 with C = G/12 |
+| `verify_rewrite.py`, `verify_mainterm.py`, `verify_errors.py` | numerical checks of Section 5 of Paper B (change of variables, main term, error terms) |
+| `verify_merged.py` | checks of the other new statements in Paper B |
+
+### data/
+
+All files are plain text, one row per line, columns separated by spaces. Lines starting with `#` are comments.
+
+- `seed_count/partial_sums_1e8.txt`: `x T(x) U(x)` at checkpoints up to 10^8 (U is the unfloored sum)
+- `seed_count/partial_sums_2e6.txt`: `x T(x)` up to 2·10^6
+- `seed_count/records_S_1e8.txt`: bases B ≤ 10^8 where S(B) sets a new record
+- `seed_count/largest_seed_check_1e4.txt`: output of `largest_seed_check.c` for B ≤ 10^4
+- `zero_insertion/b_count_N.txt`, `b_smallest.txt`, `b_largest.txt`, `b_maxlength_L.txt`: b-files for N(B), the smallest and largest member, and the maximum length
+- `zero_insertion/table_members_b2_100.txt`: all members of Z_B for 2 ≤ B ≤ 100
+- `zero_insertion/records.txt`: record bases of N(B)
+- `zero_insertion/growth_1e7.txt`, `n_ratio_stats_1e7.txt`: W(x) and N(B)/B statistics up to 10^7
+
+## Running
+
+Python 3 is needed, plus NumPy for `fit_constant.py` and `analyze_avg.py`. Everything else uses only the standard library.
+
+```
+python code/verify.py
+python code/verify_merged.py
+python code/verify_mainterm.py
+python code/zero_insertion/zi.py verify 1000
+python code/zero_insertion/zi.py members 10
+```
+
+The C programs can be built with any C compiler. We used zig:
+
+```
+python -m ziglang cc -O2 -o seed_sum_par code/seed_sum_par.c -lm
+python code/run_par.py ./seed_sum_par 100000000 14 partial_sums_1e8.txt
+```
+
+The last argument to `run_par.py` before the output file is the number of processes.
+
+## Citation
+
+Please cite the archived release:
+
+> K. Sharma and D. Sonkhla, *Code and data for: Inserting Zeros Detects Primes / Numbers that divide their zero-insertions*, Zenodo, 2026. https://doi.org/10.5281/zenodo.24002843
+
+GitHub's "Cite this repository" button gives the same citation from `CITATION.cff`.
+
+## License
+
+MIT. See `LICENSE`.
